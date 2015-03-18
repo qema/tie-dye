@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49E3607C1ABA258100D5E9D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3607B1ABA258100D5E9D1 /* AppDelegate.swift */; };
+		49E3607E1ABA258100D5E9D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3607D1ABA258100D5E9D1 /* ViewController.swift */; };
+		49E360801ABA258100D5E9D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E3607F1ABA258100D5E9D1 /* Images.xcassets */; };
+		49E360831ABA258100D5E9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E360811ABA258100D5E9D1 /* Main.storyboard */; };
+		49E3608F1ABA258100D5E9D1 /* PrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3608E1ABA258100D5E9D1 /* PrimTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49E360891ABA258100D5E9D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E3606E1ABA258100D5E9D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49E360751ABA258100D5E9D1;
+			remoteInfo = Prim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49E360761ABA258100D5E9D1 /* Prim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E3607A1ABA258100D5E9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E3607B1ABA258100D5E9D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49E3607D1ABA258100D5E9D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49E3607F1ABA258100D5E9D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49E360821ABA258100D5E9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49E360881ABA258100D5E9D1 /* PrimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E3608D1ABA258100D5E9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E3608E1ABA258100D5E9D1 /* PrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49E360731ABA258100D5E9D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E360851ABA258100D5E9D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49E3606D1ABA258100D5E9D1 = {
+			isa = PBXGroup;
+			children = (
+				49E360781ABA258100D5E9D1 /* Prim */,
+				49E3608B1ABA258100D5E9D1 /* PrimTests */,
+				49E360771ABA258100D5E9D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49E360771ABA258100D5E9D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E360761ABA258100D5E9D1 /* Prim.app */,
+				49E360881ABA258100D5E9D1 /* PrimTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E360781ABA258100D5E9D1 /* Prim */ = {
+			isa = PBXGroup;
+			children = (
+				49E3607B1ABA258100D5E9D1 /* AppDelegate.swift */,
+				49E3607D1ABA258100D5E9D1 /* ViewController.swift */,
+				49E3607F1ABA258100D5E9D1 /* Images.xcassets */,
+				49E360811ABA258100D5E9D1 /* Main.storyboard */,
+				49E360791ABA258100D5E9D1 /* Supporting Files */,
+			);
+			path = Prim;
+			sourceTree = "<group>";
+		};
+		49E360791ABA258100D5E9D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49E3607A1ABA258100D5E9D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49E3608B1ABA258100D5E9D1 /* PrimTests */ = {
+			isa = PBXGroup;
+			children = (
+				49E3608E1ABA258100D5E9D1 /* PrimTests.swift */,
+				49E3608C1ABA258100D5E9D1 /* Supporting Files */,
+			);
+			path = PrimTests;
+			sourceTree = "<group>";
+		};
+		49E3608C1ABA258100D5E9D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49E3608D1ABA258100D5E9D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49E360751ABA258100D5E9D1 /* Prim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E360921ABA258100D5E9D1 /* Build configuration list for PBXNativeTarget "Prim" */;
+			buildPhases = (
+				49E360721ABA258100D5E9D1 /* Sources */,
+				49E360731ABA258100D5E9D1 /* Frameworks */,
+				49E360741ABA258100D5E9D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prim;
+			productName = Prim;
+			productReference = 49E360761ABA258100D5E9D1 /* Prim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49E360871ABA258100D5E9D1 /* PrimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E360951ABA258100D5E9D1 /* Build configuration list for PBXNativeTarget "PrimTests" */;
+			buildPhases = (
+				49E360841ABA258100D5E9D1 /* Sources */,
+				49E360851ABA258100D5E9D1 /* Frameworks */,
+				49E360861ABA258100D5E9D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49E3608A1ABA258100D5E9D1 /* PBXTargetDependency */,
+			);
+			name = PrimTests;
+			productName = PrimTests;
+			productReference = 49E360881ABA258100D5E9D1 /* PrimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E3606E1ABA258100D5E9D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Andrew Wang";
+				TargetAttributes = {
+					49E360751ABA258100D5E9D1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					49E360871ABA258100D5E9D1 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 49E360751ABA258100D5E9D1;
+					};
+				};
+			};
+			buildConfigurationList = 49E360711ABA258100D5E9D1 /* Build configuration list for PBXProject "Prim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E3606D1ABA258100D5E9D1;
+			productRefGroup = 49E360771ABA258100D5E9D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E360751ABA258100D5E9D1 /* Prim */,
+				49E360871ABA258100D5E9D1 /* PrimTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49E360741ABA258100D5E9D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E360801ABA258100D5E9D1 /* Images.xcassets in Resources */,
+				49E360831ABA258100D5E9D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E360861ABA258100D5E9D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E360721ABA258100D5E9D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E3607E1ABA258100D5E9D1 /* ViewController.swift in Sources */,
+				49E3607C1ABA258100D5E9D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E360841ABA258100D5E9D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E3608F1ABA258100D5E9D1 /* PrimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49E3608A1ABA258100D5E9D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49E360751ABA258100D5E9D1 /* Prim */;
+			targetProxy = 49E360891ABA258100D5E9D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49E360811ABA258100D5E9D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E360821ABA258100D5E9D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49E360901ABA258100D5E9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49E360911ABA258100D5E9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49E360931ABA258100D5E9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Prim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49E360941ABA258100D5E9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Prim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49E360961ABA258100D5E9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prim.app/Contents/MacOS/Prim";
+			};
+			name = Debug;
+		};
+		49E360971ABA258100D5E9D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrimTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prim.app/Contents/MacOS/Prim";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49E360711ABA258100D5E9D1 /* Build configuration list for PBXProject "Prim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E360901ABA258100D5E9D1 /* Debug */,
+				49E360911ABA258100D5E9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E360921ABA258100D5E9D1 /* Build configuration list for PBXNativeTarget "Prim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E360931ABA258100D5E9D1 /* Debug */,
+				49E360941ABA258100D5E9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49E360951ABA258100D5E9D1 /* Build configuration list for PBXNativeTarget "PrimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E360961ABA258100D5E9D1 /* Debug */,
+				49E360971ABA258100D5E9D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49E3606E1ABA258100D5E9D1 /* Project object */;
+}
