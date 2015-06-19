@@ -12,6 +12,9 @@
 		49E360801ABA258100D5E9D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E3607F1ABA258100D5E9D1 /* Images.xcassets */; };
 		49E360831ABA258100D5E9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E360811ABA258100D5E9D1 /* Main.storyboard */; };
 		49E3608F1ABA258100D5E9D1 /* PrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3608E1ABA258100D5E9D1 /* PrimTests.swift */; };
+		49E360991ABA25EF00D5E9D1 /* PrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E360981ABA25EF00D5E9D1 /* PrimView.swift */; };
+		49E3609B1ABA262300D5E9D1 /* MinHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3609A1ABA262300D5E9D1 /* MinHeap.swift */; };
+		49E3609D1ABA298F00D5E9D1 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3609C1ABA298F00D5E9D1 /* Graph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		49E360881ABA258100D5E9D1 /* PrimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E3608D1ABA258100D5E9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E3608E1ABA258100D5E9D1 /* PrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimTests.swift; sourceTree = "<group>"; };
+		49E360981ABA25EF00D5E9D1 /* PrimView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimView.swift; sourceTree = "<group>"; };
+		49E3609A1ABA262300D5E9D1 /* MinHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
+		49E3609C1ABA298F00D5E9D1 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49E1E8131ABD2B51004A2E8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		49E3606D1ABA258100D5E9D1 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +90,13 @@
 			children = (
 				49E3607B1ABA258100D5E9D1 /* AppDelegate.swift */,
 				49E3607D1ABA258100D5E9D1 /* ViewController.swift */,
+				49E360981ABA25EF00D5E9D1 /* PrimView.swift */,
+				49E3609C1ABA298F00D5E9D1 /* Graph.swift */,
+				49E3609A1ABA262300D5E9D1 /* MinHeap.swift */,
 				49E3607F1ABA258100D5E9D1 /* Images.xcassets */,
 				49E360811ABA258100D5E9D1 /* Main.storyboard */,
 				49E360791ABA258100D5E9D1 /* Supporting Files */,
+				49E1E8131ABD2B51004A2E8A /* Resources */,
 			);
 			path = Prim;
 			sourceTree = "<group>";
@@ -153,6 +170,7 @@
 		49E3606E1ABA258100D5E9D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Andrew Wang";
 				TargetAttributes = {
@@ -208,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E360991ABA25EF00D5E9D1 /* PrimView.swift in Sources */,
 				49E3607E1ABA258100D5E9D1 /* ViewController.swift in Sources */,
+				49E3609B1ABA262300D5E9D1 /* MinHeap.swift in Sources */,
 				49E3607C1ABA258100D5E9D1 /* AppDelegate.swift in Sources */,
+				49E3609D1ABA298F00D5E9D1 /* Graph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +349,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = Prim/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Debug;
 		};
@@ -341,7 +366,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Prim/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Release;
 		};
@@ -400,6 +427,7 @@
 				49E360941ABA258100D5E9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49E360951ABA258100D5E9D1 /* Build configuration list for PBXNativeTarget "PrimTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +436,7 @@
 				49E360971ABA258100D5E9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
