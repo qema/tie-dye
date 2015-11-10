@@ -13,8 +13,8 @@ func normRand() -> Double {
 }
 
 class PrimView: NSView {
-    let Width = 1280
-    let Height = 960
+    let Width = 128
+    let Height = 128
     
     var explored = Set<Node>()
     var frontier = MinHeap<Edge>()
@@ -22,7 +22,7 @@ class PrimView: NSView {
     var rep: NSImage!
     
     override func viewDidMoveToWindow() {
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0/60.0, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0/60.0, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         
         var graph = [[Node]]()
         
@@ -30,7 +30,7 @@ class PrimView: NSView {
         for y in 0..<Height {
             var row = [Node]()
             for x in 0..<Width {
-                var node = Node(x: x, y: y)
+                let node = Node(x: x, y: y)
                 row.append(node)
             }
             graph.append(row)
@@ -46,9 +46,9 @@ class PrimView: NSView {
             }
         }
         
-        let startNode = graph[Width/2][Height/2]
+        let startNode = graph[Height/2][Width/2]
         explored.insert(startNode)
-        startNode.edges.map { self.frontier.insert($0) }
+        startNode.edges.forEach { self.frontier.insert($0) }
         
         rep = NSImage(size: frame.size)
     }
@@ -57,10 +57,20 @@ class PrimView: NSView {
         needsDisplay = true
     }
     
+    var didFirst = false
     override func drawRect(dirtyRect: NSRect) {
         rep.lockFocus()
         
-        for i in 1...1000 {
+        if !didFirst {
+            didFirst = true
+            NSColor(calibratedHue: 0.0, saturation: 1.0, brightness: 0.75, alpha: 1.0).set()
+            let dx = frame.size.width / CGFloat(Width)
+            let dy = frame.size.height / CGFloat(Height)
+            let rect = NSRect(x: CGFloat(floor(CGFloat(Width) / 2.0)) * dx, y: CGFloat(floor(CGFloat(Height) / 2.0)) * dy, width: dx, height: dy)
+            NSRectFill(rect)
+        }
+        
+        for _ in 1...4000 {
             if !frontier.isEmpty {
                 let edge = frontier.extractMin()
                 //println("\(edge.a.point) -> \(edge.b.point)")
@@ -70,14 +80,14 @@ class PrimView: NSView {
                 if explored.contains(edge.a) && !explored.contains(edge.b) {
                     explored.insert(edge.b)
                     
-                    edge.b.edges.map { (x: Edge) -> Void in
+                    edge.b.edges.forEach { (x: Edge) -> Void in
                         x.totalDist = edge.totalDist + edge.weight
                         self.frontier.insert(x)
                     }
                     
                     let dx = frame.size.width / CGFloat(Width)
                     let dy = frame.size.height / CGFloat(Height)
-                    NSColor(calibratedHue: CGFloat((edge.totalDist * 2500000) % 1.0), saturation: 1.0, brightness: 1.0, alpha: 1.0).set()
+                    NSColor(calibratedHue: CGFloat((edge.totalDist * 2500000 * 11) % 1.0), saturation: 1.0, brightness: 0.75, alpha: 1.0).set()
                     let rect = NSRect(x: CGFloat(edge.b.point.x) * dx, y: CGFloat(edge.b.point.y) * dy, width: dx, height: dy)
                     NSRectFill(rect)
                 }

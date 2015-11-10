@@ -8,7 +8,7 @@
 
 import Cocoa
 
-struct Point: Hashable, Printable {
+struct Point: Hashable, CustomStringConvertible {
     let x: Int, y: Int
     var hashValue: Int {
         return x * 1000 + y
