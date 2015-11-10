@@ -8,14 +8,16 @@
 
 import Cocoa
 
+// -- Constants --
+let DetailLevel = 11.0    // higher means more fineness
+let Width = 256
+let Height = 256
+
 func normRand() -> Double {
     return Double(arc4random()) / Double(Int.max)
 }
 
 class PrimView: NSView {
-    let Width = 128
-    let Height = 128
-    
     var explored = Set<Node>()
     var frontier = MinHeap<Edge>()
     
@@ -87,7 +89,7 @@ class PrimView: NSView {
                     
                     let dx = frame.size.width / CGFloat(Width)
                     let dy = frame.size.height / CGFloat(Height)
-                    NSColor(calibratedHue: CGFloat((edge.totalDist * 2500000 * 11) % 1.0), saturation: 1.0, brightness: 0.75, alpha: 1.0).set()
+                    NSColor(calibratedHue: CGFloat((edge.totalDist * 2500000 * DetailLevel) % 1.0), saturation: 1.0, brightness: 0.75, alpha: 1.0).set()
                     let rect = NSRect(x: CGFloat(edge.b.point.x) * dx, y: CGFloat(edge.b.point.y) * dy, width: dx, height: dy)
                     NSRectFill(rect)
                 }
